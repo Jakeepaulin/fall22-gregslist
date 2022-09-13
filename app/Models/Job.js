@@ -19,7 +19,7 @@ export class Job {
   get JobCardTemplate() {
     return /*html*/ `
      <div class="col-md-4 col-lg-3 mb-3">
-       <div class="card">
+       <div class="card rounded">
          <img
            src="${this.imgUrl}"
            alt="${this.jobTitle}"
@@ -33,7 +33,6 @@ export class Job {
            <p>${this.description}</p>
          </div>
        </div>
-     </div>;
-     `;
+     </div>`;
   }
 }
